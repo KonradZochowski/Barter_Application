@@ -11,6 +11,6 @@ Libraries used:
 - CircleImageView
 
 
-Login and password reset view
-❮img src="user_interface/1.png"❯
-❮img src="user_interface/1.png" width="100" ❯
+Login and password reset view:
+![](user_interface/1.png)
+
