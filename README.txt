@@ -14,3 +14,4 @@ Libraries used:
 Login and password reset view
 ![Login and password reset view](https://github.com/KonradZochowski/Barter_Application/blob/master/user%20interface/1.png)
 !asdasd(https://github.com/KonradZochowski/Barter_Application/master/user_interface/1.png)
+![Alt text](relative/path/to/Barter_Application/blob/master/user%20interface/1.png)
