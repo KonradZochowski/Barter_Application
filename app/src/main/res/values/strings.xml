@@ -1,0 +1,477 @@
+<resources>
+    <string name="app_name">Barter</string>
+    <string name="settings">Ustawienia</string>
+    <string name="main_menu">Menu główne</string>
+    <string name="contact">Skontaktuj się</string>
+    <string name="choose_category">Wybierz kategorię</string>
+    <string name="enter_title">Wprowadź tytuł ogłoszenia</string>
+    <string name="title">Tytuł</string>
+    <string name="enter_voivodeship">Wybierz województwo</string>
+    <string name="enter_city">Wybierz miasto</string>
+    <string name="enter_estimated_value">Wprowadź szacowaną wartość</string>
+    <string name="value">Wartość</string>
+    <string name="description">Opis</string>
+    <string name="enter_description">Wprowadź opis</string>
+    <string name="enter_category">Wybierz kategorię</string>
+    <string name="add_category">DODAJ KATEGORIĘ</string>
+    <string name="check_reported_posts">Sprawdź zgłoszone ogłoszenia</string>
+    <string name="Feedback">Informacja zwrotna</string>
+    <string name="category">Kategoria</string>
+    <string name="the_most_expensive">Najdroższe</string>
+    <string name="the_cheapest">Najtańsze</string>
+    <string name="oldToNew">Najstarsze</string>
+    <string name="newToOld">Najnowsze</string>
+    <string name="enter_your_old_password">Wprowadź swoje stare hasło</string>
+    <string name="enter_your_new_password">Wprowadź swoje nowe hasło</string>
+    <string name="enter_your_new_password_again">Wprowadź swoje nowe hasło ponownie</string>
+    <string name="confirm">POTWIERDŹ</string>
+    <string name="apply_changes">Potwierdź zmiany</string>
+    <string name="phone_number">Numer telefonu</string>
+    <string name="verification_link">
+        Link weryfikacyjny został wysłany <br/>
+        Sprawdź swoją skrzynkę pocztową</string>
+    <string name="check_verification">Sprawdź weryfikację</string>
+    <string name="resend">Wyślij ponownie</string>
+    <string name="login">Zaloguj się</string>
+    <string name="mail_adress">Adres e-mail</string>
+    <string name="password_reset">Resetuj hasło</string>
+    <string name="sign_up">Zarejestruj się</string>
+    <string name="forgot_your_password">Zapomniałeś hasła?</string>
+    <string name="password">Hasło</string>
+    <string name="admin_panel">Panel administratora</string>
+    <string name="type_a_message">Napisz wiadomość...</string>
+    <string name="edit_profile">EDYTUJ PROFIL</string>
+    <string name="change_password">ZMIEŃ HASŁO</string>
+    <string name="my_advertisements">MOJE OGŁOSZENIA</string>
+    <string name="favorites">ULUBIONE</string>
+    <string name="send_message">Wyślij wiadomość</string>
+    <string name="estimated_value">Szacowana wartość</string>
+    <string name="localisation">Lokalizacja</string>
+    <string name="seller">Sprzedawca</string>
+    <string name="visit_seller_profile">Odwiedź profil sprzedawcy</string>
+    <string name="reported_posts">Zgłoszone ogłoszenia</string>
+    <string name="send_us_feedback">Wyślij nam informację zwrotną!</string>
+    <string name="logout">Wyloguj</string>
+    <string name="notification_settings">Ustawienia powiadomień</string>
+    <string name="user_name">Nazwa użytkownika</string>
+    <string name="go_to_main_page">Przejdź do strony głównej</string>
+    <string name="changed">Zmieniono!</string>
+    <string name="you_have_successfully_changed_your_password">Pomyślnie zmieniłeś hasło</string>
+    <string name="verified">Zweryfikowano!</string>
+    <string name="you_have_successfully_verified_your_account">Pomyślnie zweryfikowałeś konto</string>
+    <string name="visit_users_profile">Odwiedź profil użytkownika</string>
+    <string name="type_your_message_here">Wpisz swoją wiadomość tutaj</string>
+    <string name="hint_minimal_price">0 zł</string>
+    <string name="hint_maximal_price">999 999 999 zł</string>
+    <string name="visit">Odwiedź</string>
+    <string name="add_to_favourites">DODAJ DO ULUBIONYCH</string>
+    <string name="dateAndCategory">Data   |   Kategoria</string>
+    <string name="enter_cash">Wprowadź gotówkę</string>
+    <string name="add_item">Dodaj przedmiot</string>
+    <string name="your_items">Twoje przedmioty:</string>
+    <string name="other_user_items">Przedmioty innego użytkownika:</string>
+    <string name="send_offer">Wyślij ofertę</string>
+    <string name="item_name">Nazwa przedmiotu</string>
+    <string name="delete">Usuń</string>
+    <string name="offer_status">Status oferty: </string>
+    <string name="counter_offer">Kontroferta</string>
+    <string name="decline">Odrzuć</string>
+    <string name="accept">Akceptuj</string>
+
+    <string-array name="voivodeships">
+        <item>Cała Polska</item>
+        <item>Dolnośląskie</item>
+        <item>Kujawsko-pomorskie</item>
+        <item>Lubelskie</item>
+        <item>Lubuskie</item>
+        <item>Łódzkie</item>
+        <item>Małopolskie</item>
+        <item>Mazowieckie</item>
+        <item>Opolskie</item>
+        <item>Podkarpackie</item>
+        <item>Podlaskie</item>
+        <item>Pomorskie</item>
+        <item>Śląskie</item>
+        <item>Świętokrzyskie</item>
+        <item>Warmińsko-mazurskie</item>
+        <item>Wielkopolskie</item>
+        <item>Zachodniopomorskie</item>
+    </string-array>
+
+    <string-array name="cala_polska">
+        <item>Cała Polska</item>
+    </string-array>
+
+    <string-array name="dolnoslaskie">
+        <item>Całe Dolnośląskie</item>
+        <item>Bielawa</item>
+        <item>Bogatynia</item>
+        <item>Boguszów-Gorce</item>
+        <item>Bolesławiec</item>
+        <item>Dzierżoniów</item>
+        <item>Głogów</item>
+        <item>Jawor</item>
+        <item>Jelcz-Laskowice</item>
+        <item>Jelenia Góra</item>
+        <item>Kamienna Góra</item>
+        <item>Kłodzko</item>
+        <item>Legnica</item>
+        <item>Lubań</item>
+        <item>Lubin</item>
+        <item>Nowa Ruda</item>
+        <item>Oława</item>
+        <item>Oleśnica</item>
+        <item>Polkowice</item>
+        <item>Strzegom</item>
+        <item>Świdnica</item>
+        <item>Świebodzice</item>
+        <item>Wałbrzych</item>
+        <item>Wrocław</item>
+        <item>Ząbkowice Śląskie</item>
+        <item>Zgorzelec</item>
+        <item>Złotoryja</item>
+    </string-array>
+
+    <string-array name="kujawsko_pomorskie">
+        <item>Całe Kujawsko-pomorskie</item>
+        <item>Brodnica</item>
+        <item>Bydgoszcz</item>
+        <item>Chełmno</item>
+        <item>Grudziądz</item>
+        <item>Inowrocław</item>
+        <item>Nakło nad Notecią</item>
+        <item>Rypin</item>
+        <item>Solec Kujawski</item>
+        <item>Świecie</item>
+        <item>Toruń</item>
+        <item>Włocławek</item>
+    </string-array>
+
+    <string-array name="lubelskie">
+        <item>Całe Lubelskie</item>
+        <item>Biała Podlaska</item>
+        <item>Biłgoraj</item>
+        <item>Chełm</item>
+        <item>Dęblin</item>
+        <item>Hrubieszów</item>
+        <item>Kraśnik</item>
+        <item>Krasnystaw</item>
+        <item>Łęczna</item>
+        <item>Lubartów</item>
+        <item>Lublin</item>
+        <item>Łuków</item>
+        <item>Międzyrzec Podlaski</item>
+        <item>Puławy</item>
+        <item>Radzyń Podlaski</item>
+        <item>Świdnik</item>
+        <item>Tomaszów Lubelski</item>
+        <item>Zamość</item>
+    </string-array>
+
+    <string-array name="lubuskie">
+        <item>Całe Lubuskie</item>
+        <item>Gorzów Wielkopolski</item>
+        <item>Gubin</item>
+        <item>Kostrzyn nad Odrą</item>
+        <item>Międzyrzecz</item>
+        <item>Nowa Sól</item>
+        <item>Słubice</item>
+        <item>Sulechów</item>
+        <item>Świebodzin</item>
+        <item>Żagań</item>
+        <item>Żary</item>
+        <item>Zielona Góra</item>
+    </string-array>
+
+    <string-array name="lodzkie">
+        <item>Całe Łódzkie</item>
+        <item>Aleksandrów Łódzki</item>
+        <item>Bełchatów</item>
+        <item>Głowno</item>
+        <item>Konstantynów Łódzki</item>
+        <item>Kutno</item>
+        <item>Łask</item>
+        <item>Łęczyca</item>
+        <item>Łódź</item>
+        <item>Łowicz</item>
+        <item>Opoczno</item>
+        <item>Ozorków</item>
+        <item>Pabianice</item>
+        <item>Piotrków Trybunalski</item>
+        <item>Radomsko</item>
+        <item>Rawa Mazowiecka</item>
+        <item>Sieradz</item>
+        <item>Skierniewice</item>
+        <item>Tomaszów Mazowiecki</item>
+        <item>Wieluń</item>
+        <item>Zduńska Wola</item>
+        <item>Zgierz</item>
+    </string-array>
+
+    <string-array name="malopolskie">
+        <item>Całe Małopolskie</item>
+        <item>Andrychów</item>
+        <item>Bochnia</item>
+        <item>Brzesko</item>
+        <item>Chrzanów</item>
+        <item>Gorlice</item>
+        <item>Kęty</item>
+        <item>Kraków</item>
+        <item>Libiąż</item>
+        <item>Limanowa</item>
+        <item>Myślenice</item>
+        <item>Nowy Sącz</item>
+        <item>Nowy Targ</item>
+        <item>Olkusz</item>
+        <item>Oświęcim</item>
+        <item>Skawina</item>
+        <item>Tarnów</item>
+        <item>Trzebinia</item>
+        <item>Wadowice</item>
+        <item>Wieliczka</item>
+        <item>Zakopane</item>
+    </string-array>
+
+    <string-array name="mazowieckie">
+        <item>Całe Mazowieckie</item>
+        <item>Ciechanów</item>
+        <item>Garwolin</item>
+        <item>Gostynin</item>
+        <item>Grodzisk Mazowiecki</item>
+        <item>Grójec</item>
+        <item>Józefów</item>
+        <item>Kobyłka</item>
+        <item>Konstancin-Jeziorna</item>
+        <item>Kozienice</item>
+        <item>Legionowo</item>
+        <item>Łomianki</item>
+        <item>Marki</item>
+        <item>Milanówek</item>
+        <item>Mińsk Mazowiecki</item>
+        <item>Mława</item>
+        <item>Nowy Dwór Mazowiecki</item>
+        <item>Ostrołęka</item>
+        <item>Ostrów Mazowiecka</item>
+        <item>Otwock</item>
+        <item>Piaseczno</item>
+        <item>Piastów</item>
+        <item>Pionki</item>
+        <item>Płock</item>
+        <item>Płońsk</item>
+        <item>Pruszków</item>
+        <item>Przasnysz</item>
+        <item>Pułtusk</item>
+        <item>Radom</item>
+        <item>Siedlce</item>
+        <item>Sierpc</item>
+        <item>Sochaczew</item>
+        <item>Sokołów Podlaski</item>
+        <item>Sulejówek</item>
+        <item>Warszawa</item>
+        <item>Wołomin</item>
+        <item>Wyszków</item>
+        <item>Ząbki</item>
+        <item>Zielonka</item>
+        <item>Żyrardów</item>
+    </string-array>
+
+    <string-array name="opolskie">
+        <item>Całe Opolskie</item>
+        <item>Brzeg</item>
+        <item>Kędzierzyn-Koźle</item>
+        <item>Kluczbork</item>
+        <item>Krapkowice</item>
+        <item>Namysłów</item>
+        <item>Nysa</item>
+        <item>Opole</item>
+        <item>Prudnik</item>
+        <item>Strzelce Opolskie</item>
+    </string-array>
+
+    <string-array name="podkarpackie">
+        <item>Całe Podkarpackie</item>
+        <item>Dębica</item>
+        <item>Jarosław</item>
+        <item>Jasło</item>
+        <item>Krosno</item>
+        <item>Łańcut</item>
+        <item>Mielec</item>
+        <item>Nisko</item>
+        <item>Przemyśl</item>
+        <item>Przeworsk</item>
+        <item>Ropczyce</item>
+        <item>Rzeszów</item>
+        <item>Sanok</item>
+        <item>Stalowa Wola</item>
+        <item>Tarnobrzeg</item>
+    </string-array>
+
+    <string-array name="podlaskie">
+        <item>Całe Podlaskie</item>
+        <item>Augustów</item>
+        <item>Białystok</item>
+        <item>Bielsk Podlaski</item>
+        <item>Grajewo</item>
+        <item>Hajnówka</item>
+        <item>Łapy</item>
+        <item>Łomża</item>
+        <item>Siemiatycze</item>
+        <item>Sokółka</item>
+        <item>Suwałki</item>
+        <item>Zambrów</item>
+    </string-array>
+
+    <string-array name="pomorskie">
+        <item>Całe Pomorskie</item>
+        <item>Bydgoszcz</item>
+        <item>Bytów</item>
+        <item>Chojnice</item>
+        <item>Gdańsk</item>
+        <item>Gdynia</item>
+        <item>Kartuzy</item>
+        <item>Kościerzyna</item>
+        <item>Kwidzyn</item>
+        <item>Lębork</item>
+        <item>Malbork</item>
+        <item>Pruszcz Gdański</item>
+        <item>Reda</item>
+        <item>Rumia</item>
+        <item>Słupsk</item>
+        <item>Sopot</item>
+        <item>Starogard Gdański</item>
+        <item>Tczew</item>
+        <item>Ustka</item>
+        <item>Wejherowo</item>
+    </string-array>
+
+    <string-array name="slaskie">
+        <item>Całe Śląskie</item>
+        <item>Będzin</item>
+        <item>Bielsko-Biała</item>
+        <item>Bieruń</item>
+        <item>Bytom</item>
+        <item>Chorzów</item>
+        <item>Cieszyn</item>
+        <item>Czechowice-Dziedzice</item>
+        <item>Czeladź</item>
+        <item>Czerwionka-Leszczyny</item>
+        <item>Częstochowa</item>
+        <item>Dąbrowa Górnicza</item>
+        <item>Gliwice</item>
+        <item>Jastrzębie-Zdrój</item>
+        <item>Jaworzno</item>
+        <item>Katowice</item>
+        <item>Knurów</item>
+        <item>Łaziska Górne</item>
+        <item>Lędziny</item>
+        <item>Lubliniec</item>
+        <item>Mikołów</item>
+        <item>Mysłowice</item>
+        <item>Myszków</item>
+        <item>Orzesze</item>
+        <item>Piekary Śląskie</item>
+        <item>Pszczyna</item>
+        <item>Pyskowice</item>
+        <item>Racibórz</item>
+        <item>Radlin</item>
+        <item>Radzionków</item>
+        <item>Ruda Śląska</item>
+        <item>Rybnik</item>
+        <item>Rydułtowy</item>
+        <item>Siemianowice Śląskie</item>
+        <item>Sosnowiec</item>
+        <item>Świętochłowice</item>
+        <item>Tarnowskie Góry</item>
+        <item>Tychy</item>
+        <item>Ustroń</item>
+        <item>Wodzisław Śląski</item>
+        <item>Zabrze</item>
+        <item>Zawiercie</item>
+        <item>Żory</item>
+        <item>Żywiec</item>
+    </string-array>
+
+    <string-array name="swietokrzyskie">
+        <item>Całe Świętokrzyskie</item>
+        <item>Busko-Zdrój</item>
+        <item>Jędrzejów</item>
+        <item>Kielce</item>
+        <item>Końskie</item>
+        <item>Ostrowiec Świętokrzyski</item>
+        <item>Sandomierz</item>
+        <item>Skarżysko-Kamienna</item>
+        <item>Starachowice</item>
+        <item>Staszów</item>
+    </string-array>
+
+    <string-array name="warminsko_mazurskie">
+        <item>Całe Warmińsko-mazurskie</item>
+        <item>Bartoszyce</item>
+        <item>Braniewo</item>
+        <item>Działdowo</item>
+        <item>Elbląg</item>
+        <item>Ełk</item>
+        <item>Giżycko</item>
+        <item>Iława</item>
+        <item>Kętrzyn</item>
+        <item>Lidzbark Warmiński</item>
+        <item>Mrągowo</item>
+        <item>Olecko</item>
+        <item>Olsztyn</item>
+        <item>Ostróda</item>
+        <item>Pisz</item>
+        <item>Szczytno</item>
+    </string-array>
+
+    <string-array name="wielkopolskie">
+        <item>Całe Wielkopolskie</item>
+        <item>Chodzież</item>
+        <item>Gniezno</item>
+        <item>Gostyń</item>
+        <item>Jarocin</item>
+        <item>Kalisz</item>
+        <item>Koło</item>
+        <item>Konin</item>
+        <item>Kościan</item>
+        <item>Krotoszyn</item>
+        <item>Leszno</item>
+        <item>Luboń</item>
+        <item>Nowy Tomyśl</item>
+        <item>Oborniki</item>
+        <item>Ostrów Wielkopolski</item>
+        <item>Piła</item>
+        <item>Pleszew</item>
+        <item>Poznań</item>
+        <item>Rawicz</item>
+        <item>Śrem</item>
+        <item>Środa Wielkopolska</item>
+        <item>Swarzędz</item>
+        <item>Szamotuły</item>
+        <item>Trzcianka</item>
+        <item>Turek</item>
+        <item>Wągrowiec</item>
+        <item>Września</item>
+        <item>Złotów</item>
+    </string-array>
+
+    <string-array name="zachodniopomorskie">
+        <item>Całe Zachodniopomorskie</item>
+        <item>Białogard</item>
+        <item>Choszczno</item>
+        <item>Goleniów</item>
+        <item>Gryfice</item>
+        <item>Gryfino</item>
+        <item>Kamień Pomorski</item>
+        <item>Kołobrzeg</item>
+        <item>Koszalin</item>
+        <item>Nowogard</item>
+        <item>Police</item>
+        <item>Stargard</item>
+        <item>Świdwin</item>
+        <item>Świnoujście</item>
+        <item>Szczecin</item>
+        <item>Szczecinek</item>
+        <item>Wałcz</item>
+    </string-array>
+
+</resources>

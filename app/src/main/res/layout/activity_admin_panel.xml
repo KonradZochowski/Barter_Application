@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBackgroundColor"
+    tools:context="org.studia.barterapplication.activities.AdminPanel">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/admin_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/adminpanel_reportedpost"
+        android:layout_width="140pt"
+        android:layout_height="25pt"
+        android:layout_marginTop="80dp"
+        android:background="@color/button_color"
+        android:text="@string/check_reported_posts"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/adminpanel_createcategory"
+        android:layout_width="140pt"
+        android:layout_height="25pt"
+        android:layout_marginTop="114dp"
+        android:background="@color/button_color"
+        android:text="@string/add_category"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminpanel_reportedpost" />
+
+    <Button
+        android:id="@+id/adminpanel_feedback"
+        android:layout_width="140pt"
+        android:layout_height="25pt"
+        android:layout_marginTop="114dp"
+        android:text="@string/Feedback"
+        android:textColor="@color/white"
+        android:background="@color/button_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminpanel_createcategory" />
+</androidx.constraintlayout.widget.ConstraintLayout>

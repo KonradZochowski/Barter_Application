@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.studia.barterapplication.activities.MyProfile"
+    android:background="@color/primaryBackgroundColor">
+
+
+    <Button
+        android:id="@+id/editProfileBtn"
+        android:layout_width="170sp"
+        android:layout_height="35sp"
+        android:layout_marginTop="50dp"
+        android:background="@color/greenBackgroundColor"
+        android:text="@string/edit_profile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usersProfilePhotoImageView" />
+
+    <Button
+        android:id="@+id/changePasswordBtn"
+        android:layout_width="170sp"
+        android:layout_height="35sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/greenBackgroundColor"
+        android:text="@string/change_password"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileBtn" />
+
+    <Button
+        android:id="@+id/postsBtn"
+        android:layout_width="170sp"
+        android:layout_height="35sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/greenBackgroundColor"
+        android:text="@string/my_advertisements"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePasswordBtn" />
+
+    <TextView
+        android:id="@+id/usersProfileUsernameTextView"
+        android:layout_width="160dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/box"
+        android:backgroundTintMode="screen"
+        android:gravity="center"
+        android:text="UserName"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usersProfilePhotoImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/usersProfilePhotoImageView"
+        android:layout_width="120dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/image_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <ImageButton
+        android:id="@+id/usersProfileMailBtn"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/primaryBackgroundColor"
+        android:src="@drawable/mail"
+        app:layout_constraintStart_toEndOf="@+id/usersProfilePhotoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/usersProfileUsernameTextView" />
+
+    <ImageButton
+        android:id="@+id/usersProfilePhoneBtn"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/primaryBackgroundColor"
+        android:src="@drawable/telephone"
+        app:layout_constraintStart_toEndOf="@+id/usersProfileMailBtn"
+        app:layout_constraintTop_toBottomOf="@+id/usersProfileUsernameTextView" />
+
+    <ImageButton
+        android:id="@+id/imageEditBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/usersProfileTextView"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_png"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goFavouritesBtn"
+        android:layout_width="170sp"
+        android:layout_height="35sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/greenBackgroundColor"
+        android:text="@string/favorites"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postsBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

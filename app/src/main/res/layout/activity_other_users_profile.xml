@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBackgroundColor"
+    tools:context="org.studia.barterapplication.activities.MyProfile">
+
+
+    <TextView
+        android:id="@+id/otherUsersProfileUsernameTextView"
+        android:layout_width="160dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/box"
+        android:backgroundTintMode="screen"
+        android:gravity="center"
+        android:text="UserName"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/otherUsersProfilePhotoImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/otherUsersProfilePhotoImageView"
+        android:layout_width="120dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/image_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <ImageButton
+        android:id="@+id/otherUsersProfileMailBtn"
+        android:layout_width="65dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/primaryBackgroundColor"
+        android:src="@drawable/mail"
+        app:layout_constraintStart_toEndOf="@+id/otherUsersProfilePhotoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/otherUsersProfileUsernameTextView" />
+
+    <ImageButton
+        android:id="@+id/otherUsersProfilePhoneBtn"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/primaryBackgroundColor"
+        android:src="@drawable/telephone"
+        app:layout_constraintStart_toEndOf="@+id/otherUsersProfileMailBtn"
+        app:layout_constraintTop_toBottomOf="@+id/otherUsersProfileUsernameTextView" />
+
+    <ImageView
+        android:id="@+id/otherUsersProfileTextView"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_png"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/otherUserPostList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherUsersProfilePostTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/otherUsersProfilePostTextView"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#1A5F7A"
+        android:backgroundTintMode="screen"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherUserSendMessageBtn" />
+
+    <Button
+        android:id="@+id/otherUserSendMessageBtn"
+        android:layout_width="165dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/button_color"
+        android:text="@string/send_message"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/otherUserSendOfferBtn"
+        app:layout_constraintTop_toBottomOf="@+id/otherUsersProfileMailBtn" />
+
+    <Button
+        android:id="@+id/otherUserSendOfferBtn"
+        android:layout_width="135dp"
+        android:layout_height="32dp"
+        android:background="@color/button_color"
+        android:text="Wyślij ofertę"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/otherUsersProfilePhotoImageView"
+        app:layout_constraintTop_toTopOf="@+id/otherUserSendMessageBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

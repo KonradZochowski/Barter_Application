@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/myPropositionOfferStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:text="@string/offer_status"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/myPropositionYourItemsOfferTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="@string/your_items"
+        app:layout_constraintTop_toBottomOf="@id/myPropositionOfferStatusTextView"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myPropositionMyItemsOfferRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/myPropositionYourItemsOfferTextView"/>
+
+    <View
+        android:id="@+id/myPropositionDividerOffer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/myPropositionMyItemsOfferRecyclerView"/>
+
+
+    <TextView
+        android:id="@+id/myPropositionOtherUserItemsOfferTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="@string/other_user_items"
+        app:layout_constraintTop_toBottomOf="@id/myPropositionDividerOffer"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myPropositionOtherUserItemsOfferRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/myPropositionOtherUserItemsOfferTextView"/>
+
+    <View
+        android:id="@+id/myPropositionDividerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/myPropositionOtherUserItemsOfferRecyclerView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

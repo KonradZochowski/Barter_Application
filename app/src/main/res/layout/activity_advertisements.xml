@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBackgroundColor"
+    tools:context="org.studia.barterapplication.activities.AdvertisementsActivity">
+
+    <ImageView
+        android:id="@+id/textView12"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/advertisements"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/advertisementsPostList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <ImageButton
+        android:id="@+id/advertisementsAddPostBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@color/primaryBackgroundColor"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_plus" />
+
+    <Button
+        android:id="@+id/priceLowToHighBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/the_cheapest"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/advertisementsPostList"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/priceHighToLowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="@string/the_most_expensive"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/advertisementsPostList"
+        app:layout_constraintStart_toEndOf="@+id/priceLowToHighBtn" />
+
+    <Button
+        android:id="@+id/dateNewToOldBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginStart="1dp"
+        android:text="@string/newToOld"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/advertisementsPostList"
+        app:layout_constraintStart_toEndOf="@+id/priceHighToLowBtn" />
+
+    <Button
+        android:id="@+id/dateOldToNewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginStart="1dp"
+        android:text="@string/oldToNew"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/advertisementsPostList"
+        app:layout_constraintStart_toEndOf="@+id/dateNewToOldBtn" />
+
+    <SearchView
+        android:id="@+id/advertisementsSearchView"
+        android:layout_width="276dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/search_box"
+        android:queryHint="Czego szukasz?"
+        android:searchIcon="@drawable/ic_search"
+        app:layout_constraintBottom_toTopOf="@+id/priceHighToLowBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/menuImageBtn"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/primaryBackgroundColor"
+        app:layout_constraintBottom_toTopOf="@+id/dateOldToNewBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

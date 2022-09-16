@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/postLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/postPictureImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/postDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/postPictureImageView"
+        app:layout_constraintTop_toTopOf="@+id/postPictureImageView"
+        app:layout_constraintWidth_max="250dp" />
+
+    <TextView
+        android:id="@+id/postDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/postPictureImageView"
+        app:layout_constraintTop_toBottomOf="@+id/postDescriptionTextView" />
+
+    <TextView
+        android:id="@+id/postPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/postPictureImageView"
+        app:layout_constraintTop_toBottomOf="@+id/postDateTextView" />
+
+    <View
+        android:id="@+id/propositionDividerOffer"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postPictureImageView" />
+
+    <ImageButton
+        android:id="@+id/postEditBtn"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/primaryBackgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deleteMyPost"
+        app:srcCompat="@drawable/ic_repair" />
+
+    <ImageButton
+        android:id="@+id/deleteMyPost"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/primaryBackgroundColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_trash" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

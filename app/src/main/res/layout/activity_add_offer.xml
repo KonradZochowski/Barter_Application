@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/propositionYourItemsOfferTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/your_items" />
+
+            <Spinner
+                android:id="@+id/myItemsSpinner"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/addMyItemButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_color"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="@string/add_item" />
+
+            <EditText
+                android:id="@+id/enterMyCashEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:hint="@string/enter_cash"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/propositionMyItemsOfferRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="280dp" />
+
+            <View
+                android:id="@+id/propositionDividerOffer"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="?android:attr/listDivider" />
+
+
+            <TextView
+                android:id="@+id/propositionOtherUserItemsOfferTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/other_user_items" />
+
+            <Spinner
+                android:id="@+id/otherUserItemsSpinner"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/addOtherUserItemButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_color"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="@string/add_item" />
+
+            <EditText
+                android:id="@+id/enterOtherUserCashEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:hint="@string/enter_cash"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/propositionOtherUserItemsOfferRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="280dp" />
+
+            <Button
+                android:id="@+id/acceptOfferButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_button"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="@string/send_offer" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

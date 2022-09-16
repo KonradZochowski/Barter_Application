@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.studia.barterapplication.activities.MainActivity"
+    android:background="@color/primaryBackgroundColor">
+
+    <ImageButton
+        android:id="@+id/advertisementsImageBtn"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/advertisements"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/myPostsImageBtn"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_posts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageBtn" />
+
+    <ImageButton
+        android:id="@+id/profileImageBtn"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/profile_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/advertisementsImageBtn" />
+
+    <ImageButton
+        android:id="@+id/myMessagesImageBtn"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/messages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myPostsImageBtn" />
+
+    <ImageButton
+        android:id="@+id/myOffersImageBtn"
+        android:layout_width="275dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/offers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myMessagesImageBtn" />
+
+    <Button
+        android:id="@+id/adminPanelBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/button_color"
+        android:text="@string/admin_panel"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myOffersImageBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
